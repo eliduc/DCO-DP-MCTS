@@ -171,7 +171,6 @@ def mdp_sale_strat_cl(N, T, gamma, constraints, fi, p_min, p_max, dp, d_D, u_str
             closest_u = min(u_vals, key=lambda x: abs(x - desired_u))
             desired_u = closest_u
         
-        desired_u = min(desired_u, inv_i)
         action_idx = u_vals.index(desired_u)
         
         # Выполняем шаг MDP
